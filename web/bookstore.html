@@ -4,23 +4,97 @@
 <head>
     <title>网上书城</title>
     <style type="text/css">
+        #clear{
+            clear: both;
+        }
+
+        #top_left{
+            float: left;
+        }
+
+        #top_right{
+            float: right;
+            width: 400px;
+            margin-top: 15px;
+            font-size: 13px;
+
+        }
+        #top_right img{
+            margin-bottom: -5px;
+        }
+        #top_right a{
+            color: #06f;
+            text-decoration: none;
+        }
+        #top_right a:hover{
+            color: #909;
+        }
+
+        #menu{
+            background-color: #1C3F09;
+            border-top: 5px solid #82B211;
+            padding: 10px 0;
+            text-align: center;
+        }
+        #menu a{
+            margin: 0 8px;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 15px;
+            text-decoration: none;
+        }
+        #menu a:hover{
+            color: #999999;
+        }
+        #menu .all{
+            color: yellow;
+        }
 
     </style>
 </head>
 <body>
     <div id="page">
+        <!--页面顶部-->
         <div id="top">
-
+            <div id="top_left">
+                <img src="bookimages/logo.png" alt="网上书城logo图片">
+            </div>
+            <div id="top_right">
+                <img src="bookimages/cart.gif">
+                <a href="#">购物车</a>|
+                <a href="#">帮助中心</a>|
+                <a href="#">我的账户</a>|
+                <a href="#">新用户注册</a>
+            </div>
+            <!-- 清清除动 -->
+            <div id="clear"></div>
         </div>
 
+        <!--菜单-->
         <div id="menu">
-
+            <a href="#">文学</a>
+            <a href="#">生活</a>
+            <a href="#">计算机</a>
+            <a href="#">外语</a>
+            <a href="#">经管</a>
+            <a href="#">励志</a>
+            <a href="#">社科</a>
+            <a href="#">学术</a>
+            <a href="#">少儿</a>
+            <a href="#">艺术</a>
+            <a href="#">原版</a>
+            <a href="#">科技</a>
+            <a href="#">考试</a>
+            <a href="#">生活百科</a>
+            <a class="all" href="#">全部目录商品</a>
         </div>
 
+        <!--搜索框-->
         <div id="search">
 
         </div>
 
+        <!--内容-->
         <div id="content">
             <div id="content_top">
 
@@ -30,6 +104,7 @@
             </div>
         </div>
 
+        <!--页面底部-->
         <div id="bottom">
 
         </div>
