@@ -2,6 +2,7 @@
         "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>网上书城</title>
     <style type="text/css">
         #clear{
@@ -50,6 +51,20 @@
             color: yellow;
         }
 
+        #search {
+            background-color: #B6B684;
+            padding: 7px 0;
+            text-align: right;
+        }
+        #search input[type="text"]{
+            height: 16px;
+            border: 1px solid #999999;
+        }
+        #search input[type="image"]{
+            margin-right: 250px;
+            margin-bottom: -5px;
+        }
+
     </style>
 </head>
 <body>
@@ -91,7 +106,9 @@
 
         <!--搜索框-->
         <div id="search">
-
+            <span>Search</span>
+            <input type="text" />
+            <input type="image" src="bookimages/serchbutton.gif" />
         </div>
 
         <!--内容-->
