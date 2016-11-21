@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>网上书城</title>
     <style type="text/css">
-        #clear{
+        .clear{
             clear: both;
         }
 
@@ -65,6 +65,72 @@
             margin-bottom: -5px;
         }
 
+        #content{
+            width: 900px;
+            margin: 8px auto 15px;
+        }
+        #content_top{
+            text-align: right;
+            font-size: 13px;
+        }
+        #content_bottom{
+            border: 1px solid #999999;
+            background-color: #FCFDEF;
+            padding: 10px 15px;
+        }
+        #content_bottom span{
+            font-size: 13px;
+        }
+        #content_bottom h1{
+            font-size: 15px;
+            display: inline;
+        }
+        #productlist_img img{
+            width: 100%;
+        }
+        .book{
+            width: 25%;
+            float: left;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .bookimg img{
+            width: 130px;
+            height: 196px;
+        }
+        #jumpPage{
+            text-align: center;
+        }
+        #jumpPage a{
+            text-decoration: none;
+            border: 1px solid #9AAFE5;
+            padding: 2px 6px;
+            color: #9AAFE5;
+        }
+        #jumpPage a:hover{
+            color: #2B66A5;
+            border: 1px solid #2B66A5;
+        }
+        .current{
+            background-color: blue;
+        }
+
+        #bottom{
+            background-color: #EFEEDC;
+            height: 60px;
+            padding: 10px 0;
+        }
+        #bottom_left{
+            width: 400px;
+            float: left;
+            margin-left: 200px;
+        }
+        #bottom_right{
+            width: 500px;
+            float: left;
+            line-height: 28px;
+        }
+
     </style>
 </head>
 <body>
@@ -75,14 +141,14 @@
                 <img src="bookimages/logo.png" alt="网上书城logo图片">
             </div>
             <div id="top_right">
-                <img src="bookimages/cart.gif">
+                <img src="bookimages/cart.gif" alt="">
                 <a href="#">购物车</a>|
                 <a href="#">帮助中心</a>|
                 <a href="#">我的账户</a>|
                 <a href="#">新用户注册</a>
             </div>
             <!-- 清清除动 -->
-            <div id="clear"></div>
+            <div class="clear"></div>
         </div>
 
         <!--菜单-->
@@ -108,25 +174,127 @@
         <div id="search">
             <span>Search</span>
             <input type="text" />
-            <input type="image" src="bookimages/serchbutton.gif" />
+            <input type="image" src="bookimages/serchbutton.gif" alt="" />
         </div>
 
         <!--内容-->
         <div id="content">
             <div id="content_top">
-
+                <span>首页&nbsp;&gt;&nbsp;旅游&nbsp;&gt;&nbsp;列表</span>
             </div>
             <div id="content_bottom">
+                <h1>商品目录</h1>
+                <hr/>
+                <h1>计算机类</h1>
+                <span>共100种商品</span>
+                <hr/>
+                <div id="productlist">
+                    <div id="productlist_img">
+                        <img src="bookimages/productlist.gif" alt="productlist">
+                    </div>
+                    <div id="booklist">
+                        <div class="book">
+                            <div class="bookimg">
+                                <img src="bookcover/101.jpg" alt="">
+                            </div>
+                            <div class="bookintr">
+                                <span>书名：xxx</span><br/>
+                                <span>售价：xxx</span>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <div class="bookimg">
+                                <img src="bookcover/102.jpg" alt="">
+                            </div>
+                            <div class="bookintr">
+                                <span>书名：xxx</span><br/>
+                                <span>售价：xxx</span>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <div class="bookimg">
+                                <img src="bookcover/103.jpg" alt="">
+                            </div>
+                            <div class="bookintr">
+                                <span>书名：xxx</span><br/>
+                                <span>售价：xxx</span>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <div class="bookimg">
+                                <img src="bookcover/104.jpg" alt="">
+                            </div>
+                            <div class="bookintr">
+                                <span>书名：xxx</span><br/>
+                                <span>售价：xxx</span>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <div class="bookimg">
+                                <img src="bookcover/105.jpg" alt="">
+                            </div>
+                            <div class="bookintr">
+                                <span>书名：xxx</span><br/>
+                                <span>售价：xxx</span>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <div class="bookimg">
+                                <img src="bookcover/106.jpg" alt="">
+                            </div>
+                            <div class="bookintr">
+                                <span>书名：xxx</span><br/>
+                                <span>售价：xxx</span>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <div class="bookimg">
+                                <img src="bookcover/107.jpg" alt="">
+                            </div>
+                            <div class="bookintr">
+                                <span>书名：xxx</span><br/>
+                                <span>售价：xxx</span>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <div class="bookimg">
+                                <img src="bookcover/108.jpg" alt="">
+                            </div>
+                            <div class="bookintr">
+                                <span>书名：xxx</span><br/>
+                                <span>售价：xxx</span>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div id="jumpPage">
+                            <a href="#">上一页</a>
+                            <a class="current" href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">下一页</a>
+                        </div>
 
+                    </div>
+
+                </div>
             </div>
         </div>
 
         <!--页面底部-->
         <div id="bottom">
-
+            <div id="bottom_left">
+                <img src="bookimages/logo.png" alt="logo">
+            </div>
+            <div id="bottom_right">
+                <span>CONTACT US</span><br/>
+                <span>copyright 2008 &copy; BookStore All Rights RESERVED</span>
+            </div>
         </div>
 
     </div>
-
 </body>
 </html>
